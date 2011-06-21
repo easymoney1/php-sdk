@@ -19,8 +19,8 @@ require '../src/facebook.php';
 
 // Create our Application instance (replace this with your appId and secret).
 $facebook = new Facebook(array(
-  'appId'  => '117743971608120',
-  'secret' => '943716006e74d9b9283d4d5d8ab93204',
+  'appId'  => '118566291563577',
+  'secret' => '77f7ea2e010ec00c8dd4664557b8a0e0',
 ));
 
 // Get User ID
@@ -46,7 +46,9 @@ if ($user) {
 if ($user) {
   $logoutUrl = $facebook->getLogoutUrl();
 } else {
-  $loginUrl = $facebook->getLoginUrl();
+  $loginUrl = https://graph.facebook.com/oauth/authorize?type=user_agent&display=page&client_id=118566291563577 
+  &redirect_uri=http://apps.facebook.com/make_maney_indo/ 
+  &scope=user_photos";
 }
 
 // This call will always work since we are fetching public data.
